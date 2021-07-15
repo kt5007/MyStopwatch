@@ -46,6 +46,7 @@
 
   //ボタンをクリックしたときの処理
   start.addEventListener("click", () => {
+    //ボタンを押せないようにする
     if(start.classList.contains('inactive') === true){
       return;
     }
@@ -54,6 +55,7 @@
     countUp();
   });
   stop.addEventListener("click", () => {
+    //ボタンを押せないようにする
     if(stop.classList.contains('inactive') === true){
       return;
     }
@@ -63,6 +65,7 @@
     elapsedTime += Date.now() - startTime;
   });
   reset.addEventListener("click", () => {
+    //ボタンを押せないようにする
     if(reset.classList.contains('inactive') === true){
       return;
     }
